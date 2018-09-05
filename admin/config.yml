@@ -1,0 +1,72 @@
+--- 
+backend: 
+  branch: master
+  name: github
+  repo: comp500/Discord_Fork
+  site_domain: awesome-varahamihira-4fbd54.netlify.com
+collections: 
+  - 
+    create: true
+    fields: 
+      - 
+        hint: "The client ID of your bot"
+        label: "Client ID"
+        name: client_id
+        pattern: 
+          - \d+
+          - "Must be a number"
+        widget: string
+      - 
+        hint: "The application ID of your bot. Leave blank, unless you have a pre-2016 bot"
+        required: false
+        label: "Application ID"
+        name: application_id
+        pattern: 
+          - \d+
+          - "Must be a number"
+        widget: string
+      - 
+        hint: "The name of your bot"
+        label: "Bot Name"
+        name: pagename
+        widget: string
+      - 
+        hint: "The prefix of your bot"
+        label: "Prefix"
+        name: prefix
+        widget: string
+      - 
+        hint: "The description of your bot, limited to 60 characters"
+        label: "Description"
+        name: description
+        widget: string
+      - 
+        hint: "An avatar URL to a Discord website"
+        label: "Avatar"
+        name: avatar
+        widget: string
+      - 
+        hint: "A link to invite your bot - HTTPS only"
+        label: "Invite link"
+        name: link
+        widget: string
+      - 
+        hint: "A link to the Discord server for the bot"
+        required: false
+        label: "Support link"
+        name: support
+        widget: string
+      - 
+        hint: 'If your bot is "Not Safe For Work"'
+        label: "NSFW"
+        name: nsfw
+        widget: boolean
+      - 
+        label: Body
+        name: body
+        widget: markdown
+    folder: _bots/
+    label: "Discord Bot"
+    name: bot
+    slug: "{{slug}}"
+media_folder: assets/images

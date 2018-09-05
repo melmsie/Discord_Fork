@@ -14,6 +14,14 @@ collections:
       - 
         hint: "The client ID of your bot"
         label: "Client ID"
+        name: title
+        pattern: 
+          - \d+
+          - "Must be a number"
+        widget: string
+      - 
+        hint: "The client ID of your bot"
+        label: "Client ID"
         name: client_id
         pattern: 
           - \d+

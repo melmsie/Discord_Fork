@@ -74,6 +74,21 @@ collections:
         name: support
         widget: string
       - 
+        hint: "The location of the source for this bot"
+        required: false
+        label: "GitHub"
+        name: github
+        widget: object
+        fields:
+          - 
+            label: "Owner"
+            name: owner
+            widget: string
+          - 
+            label: "Repo"
+            name: repo
+            widget: string
+      - 
         hint: 'If your bot is "Not Safe For Work"'
         label: "NSFW"
         name: nsfw

@@ -5,8 +5,11 @@ backend:
   repo: comp500/Discord_Fork
   site_domain: awesome-varahamihira-4fbd54.netlify.com
 collections: 
-  - 
+  - name: "bot"
     create: true
+    folder: _bots/
+    label: "Discord Bot"
+    slug: "{{slug}}"
     fields: 
       - 
         hint: "The client ID of your bot"
@@ -65,8 +68,4 @@ collections:
         label: Body
         name: body
         widget: markdown
-    folder: _bots/
-    label: "Discord Bot"
-    name: bot
-    slug: "{{slug}}"
 media_folder: assets/images

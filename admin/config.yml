@@ -4,12 +4,18 @@ backend:
   name: github
   repo: comp500/Discord_Fork
   site_domain: awesome-varahamihira-4fbd54.netlify.com
+publish_mode: editorial_workflow
+display_url: https://awesome-varahamihira-4fbd54.netlify.com
+media_folder: assets/images
 collections: 
   - name: "bot"
     create: true
     folder: _bots/
-    label: "Discord Bot"
+    label: "Discord Bots"
+    label_singular: "Discord Bot"
     slug: "{{slug}}"
+    editor:
+      preview: false
     fields: 
       - 
         hint: "The client ID of your bot"
@@ -76,4 +82,3 @@ collections:
         label: Body
         name: body
         widget: markdown
-media_folder: assets/images
